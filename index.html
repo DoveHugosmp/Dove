@@ -1,28 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-<style>
-html,body {
-    margin: 0;
-    height: 100%;
-}
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-}
-h1 {
-    font-size: 64px;
-    font-weight: 400;
-    background: linear-gradient(90deg, #20e0d0, #1677ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🕊️ DOVE Clan 🕊️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at top, #063b4a, #07151c 55%, #000000);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 45px 35px;
+            text-align: center;
+
+            background: rgba(5, 18, 25, 0.9);
+            border: 2px solid rgba(0, 200, 255, 0.4);
+            border-radius: 25px;
+
+            box-shadow:
+                0 0 25px rgba(0, 200, 255, 0.3),
+                0 0 70px rgba(0, 120, 255, 0.15);
+        }
+
+        /* Türkis → Hellblau → Blau */
+        .gradient {
+            background: linear-gradient(
+                90deg,
+                #00ffff,
+                #66e6ff,
+                #00aaff,
+                #0066ff,
+                #00ffff
+            );
+
+            background-size: 300% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            animation: gradientMove 5s linear infinite;
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% center;
+            }
+
+            100% {
+                background-position: 300% center;
+            }
+        }
+
+        h1 {
+            font-size: clamp(30px, 6vw, 48px);
+            margin-bottom: 35px;
+            font-weight: 900;
+        }
+
+        .text {
+            font-size: clamp(16px, 2vw, 19px);
+            line-height: 1.7;
+            margin: 25px 0;
+        }
+
+        .line {
+            display: block;
+        }
+
+        .section {
+            margin: 35px 0 15px;
+            font-size: clamp(22px, 4vw, 30px);
+            font-weight: 900;
+        }
+
+        .important {
+            margin-top: 40px;
+            font-size: clamp(24px, 5vw, 34px);
+            font-weight: 900;
+        }
+
+        .divider {
+            height: 2px;
+            width: 80%;
+            margin: 25px auto;
+
+            background: linear-gradient(
+                90deg,
+                transparent,
+                #00ffff,
+                #66e6ff,
+                #0066ff,
+                transparent
+            );
+
+            box-shadow: 0 0 15px #00aaff;
+        }
+    </style>
 </head>
+
 <body>
-<h1>Hallo</h1>
+
+<div class="container">
+
+    <h1 class="gradient">
+        🕊️ Willkommen bei DOVE 🕊️
+    </h1>
+
+    <div class="divider"></div>
+
+    <div class="text gradient">
+        <span class="line">Ihr sucht einen Clan auf dem Hugo SMP, der nicht nur rumsteht,</span>
+        <span class="line">sondern richtig durchzieht? Dann seid ihr bei dem Dove Clan</span>
+        <span class="line">genau richtig! Wir sind ein aktiver Clan, der täglich am Grinden ist.</span>
+        <span class="line">Damit wir unseren Clan weiter ausbauen können, suchen wir</span>
+        <span class="line">motivierte Spieler für folgende Rollen:</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section gradient">
+        ⚒️ BUILDER
+    </div>
+
+    <div class="text gradient">
+        <span class="line">Du hast ein Händchen für Architektur und willst</span>
+        <span class="line">epische Bases bauen? Dann komm!</span>
+        <span class="line">Bring deinen Style mit ein!</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section gradient">
+        ⚔️ PVPER
+    </div>
+
+    <div class="text gradient">
+        <span class="line">Du liebst den Nervenkitzel und verteidigst den Clan</span>
+        <span class="line">in Clan-Fights? Du sicherst wertvollen Loot</span>
+        <span class="line">und zeigst anderen Clans, wo der Hammer hängt?</span>
+        <span class="line">Ab an die Front!</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section gradient">
+        🔥 Was wir bieten
+    </div>
+
+    <div class="text gradient">
+        <span class="line">💯 100% Grind</span>
+        <span class="line">Wir spielen viel, wir farmen viel,</span>
+        <span class="line">wir erreichen viel!</span>
+    </div>
+
+    <div class="section gradient">
+        🤝 Echten Zusammenhalt
+    </div>
+
+    <div class="text gradient">
+        <span class="line">Wer einen Dove angreift, legt sich mit dem ganzen Schwarm an.</span>
+        <span class="line">Organisiertes Team: Klare Ziele, gemeinsame Aktionen</span>
+        <span class="line">und viel Spaß im Talk.</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section gradient">
+        🔥 Was du mitbringen solltest
+    </div>
+
+    <div class="text gradient">
+        <span class="line">Aktivität & Lust auf exzessives Grinden</span>
+        <span class="line">Teamgeist, Verlässlichkeit und Bock auf Hugo SMP</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="important gradient">
+        🚨 WICHTIG 🚨
+    </div>
+
+    <div class="text gradient">
+        <span class="line">Mindestalter: 12</span>
+        <span class="line">Beitrittskosten: 500k, bei Verhandlungen vielleicht weniger</span>
+        <span class="line">Mindestspielzeit: 3 Days</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section gradient">
+        Bei Interesse mir schreiben 📨
+    </div>
+
+</div>
+
 </body>
 </html>
