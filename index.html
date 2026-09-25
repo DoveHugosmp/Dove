@@ -14,8 +14,7 @@
         body {
             margin: 0;
             min-height: 100vh;
-            background:
-                radial-gradient(circle at top, #063b4a, #07151c 55%, #000000);
+            background: #07151c;
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -29,42 +28,31 @@
             padding: 45px 35px;
             text-align: center;
 
-            background: rgba(5, 18, 25, 0.9);
-            border: 2px solid rgba(0, 200, 255, 0.4);
-            border-radius: 25px;
-
-            box-shadow:
-                0 0 25px rgba(0, 200, 255, 0.3),
-                0 0 70px rgba(0, 120, 255, 0.15);
+            background: #0b2029;
+            border: 2px solid #174452;
+            border-radius: 20px;
         }
 
-        /* Türkis → Hellblau → Blau */
+        /* Nur die Schrift bekommt den Farbverlauf */
         .gradient {
             background: linear-gradient(
                 90deg,
                 #00ffff,
                 #66e6ff,
-                #00aaff,
-                #0066ff,
-                #00ffff
+                #0099ff,
+                #0055ff
             );
 
-            background-size: 300% auto;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-
-            animation: gradientMove 5s linear infinite;
         }
 
-        @keyframes gradientMove {
-            0% {
-                background-position: 0% center;
-            }
-
-            100% {
-                background-position: 300% center;
-            }
+        /* Emojis bleiben normal */
+        .emoji {
+            -webkit-text-fill-color: initial;
+            color: initial;
+            background: none;
         }
 
         h1 {
@@ -95,21 +83,12 @@
             font-weight: 900;
         }
 
+        /* Einfache Trennlinie ohne Farb-Effekt */
         .divider {
-            height: 2px;
+            height: 1px;
             width: 80%;
             margin: 25px auto;
-
-            background: linear-gradient(
-                90deg,
-                transparent,
-                #00ffff,
-                #66e6ff,
-                #0066ff,
-                transparent
-            );
-
-            box-shadow: 0 0 15px #00aaff;
+            background: #31515c;
         }
     </style>
 </head>
@@ -118,8 +97,10 @@
 
 <div class="container">
 
-    <h1 class="gradient">
-        🕊️ Willkommen bei DOVE 🕊️
+    <h1>
+        <span class="emoji">🕊️</span>
+        <span class="gradient">Willkommen bei DOVE</span>
+        <span class="emoji">🕊️</span>
     </h1>
 
     <div class="divider"></div>
@@ -134,8 +115,9 @@
 
     <div class="divider"></div>
 
-    <div class="section gradient">
-        ⚒️ BUILDER
+    <div class="section">
+        <span class="emoji">⚒️</span>
+        <span class="gradient">BUILDER</span>
     </div>
 
     <div class="text gradient">
@@ -146,8 +128,9 @@
 
     <div class="divider"></div>
 
-    <div class="section gradient">
-        ⚔️ PVPER
+    <div class="section">
+        <span class="emoji">⚔️</span>
+        <span class="gradient">PVPER</span>
     </div>
 
     <div class="text gradient">
@@ -159,18 +142,20 @@
 
     <div class="divider"></div>
 
-    <div class="section gradient">
-        🔥 Was wir bieten
+    <div class="section">
+        <span class="emoji">🔥</span>
+        <span class="gradient">Was wir bieten</span>
     </div>
 
     <div class="text gradient">
-        <span class="line">💯 100% Grind</span>
+        <span class="line"><span class="emoji">💯</span> 100% Grind</span>
         <span class="line">Wir spielen viel, wir farmen viel,</span>
         <span class="line">wir erreichen viel!</span>
     </div>
 
-    <div class="section gradient">
-        🤝 Echten Zusammenhalt
+    <div class="section">
+        <span class="emoji">🤝</span>
+        <span class="gradient">Echten Zusammenhalt</span>
     </div>
 
     <div class="text gradient">
@@ -181,8 +166,9 @@
 
     <div class="divider"></div>
 
-    <div class="section gradient">
-        🔥 Was du mitbringen solltest
+    <div class="section">
+        <span class="emoji">🔥</span>
+        <span class="gradient">Was du mitbringen solltest</span>
     </div>
 
     <div class="text gradient">
@@ -192,8 +178,10 @@
 
     <div class="divider"></div>
 
-    <div class="important gradient">
-        🚨 WICHTIG 🚨
+    <div class="important">
+        <span class="emoji">🚨</span>
+        <span class="gradient">WICHTIG</span>
+        <span class="emoji">🚨</span>
     </div>
 
     <div class="text gradient">
@@ -204,8 +192,9 @@
 
     <div class="divider"></div>
 
-    <div class="section gradient">
-        Bei Interesse mir schreiben 📨
+    <div class="section">
+        <span class="gradient">Bei Interesse mir schreiben</span>
+        <span class="emoji">📨</span>
     </div>
 
 </div>
